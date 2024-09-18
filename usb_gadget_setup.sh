@@ -34,3 +34,6 @@ ln -s functions/rndis.usb0 configs/c.1
 
 # Enable the gadget
 ls /sys/class/udc > UDC
+
+# Set static IP address for usb0 interface (Raspberry Pi's IP)
+sudo ifconfig usb0 192.168.7.2 netmask 255.255.255.0 up
